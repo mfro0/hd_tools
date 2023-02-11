@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
     res = fread(&vtoc, sizeof(vtoc), 1, fp);
     if (res != 1)
     {
-        fprintf(stderr, "could not read vtoc\n");
+        fprintf(stderr, "could not read vtoc from disk\n");
         exit(1);
     }
     
